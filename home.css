@@ -1,0 +1,183 @@
+#introduction, #portfolio{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    margin: 10px 0px;
+    padding: 5px 5px;
+}
+
+#introduction{
+    background-color: rgb(192,193,255);
+}
+
+#introduction #title{
+    background-color: rgb(242,239,255);
+    border-radius: 0.8em;
+    width: fit-content;
+    color:rgb(71,70,70);
+    font-size: 1.0em;
+    padding: 0px 5px;
+    margin: 5px 5px;
+}
+
+#introduction #content{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+#introduction #content #image{
+    border-radius: 1em;
+    width:30%;
+    min-width: 120px;
+    max-width: 250px;
+    margin: 5px 5px;
+    overflow: hidden;
+}
+
+#introduction #content #image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#introduction #content #details{
+    flex: 1;
+    margin: 5px 5px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#introduction #content #details #personal, #introduction #content #details #achievement{
+    border-radius: 1em;
+    background-color: rgb(250,250,250);
+    padding: 5px;
+}
+
+#introduction #content #details #personal h2, #introduction #content #details #achievement h2{
+    font-size: 1em;
+    margin: 5px 5px;
+}
+
+#introduction #content #details #personal p,#introduction #content #details #achievement p{
+    color:rgb(71,70,70);
+    font-size: 1em;
+    margin: 5px 5px;
+}
+
+#introduction #content #details #personal{
+    flex: 1;
+}
+
+#introduction #content #details #achievement{
+    flex: 2;
+}
+
+#introduction #directButton{
+    flex: 1;
+    margin: 5px 5px 5px auto;
+}
+
+#introduction #directButton a{
+    text-decoration: none;
+    color: rgb(71,70,70);
+}
+
+#introduction #directButton a:hover{
+    color:rgb(250,250,250);
+}
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255,219,209);
+}
+
+#portfolio #title{
+    background-color: rgb(255, 237, 232);
+    border-radius: 0.8em;
+    width: fit-content;
+    color:rgb(71,70,70);
+    font-size: 1.0em;
+    padding: 0px 5px;
+    margin: 5px 5px;
+}
+
+#portfolio #content{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 5px 0px;
+    flex-wrap: wrap;
+}
+
+@media(max-width:1000px){
+    #portfolio #content{
+        position:relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #portfolio #content .item{
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+#portfolio #content .item{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    margin: 5px;
+    min-width: 200px;
+    background-color: rgb(255, 237, 232);
+    border-radius: 1em;
+    align-items: stretch;
+}
+
+#portfolio #content .item .title,#portfolio #content .item .description,#portfolio #content .item .image{
+    margin: 5px;
+}
+
+#portfolio #content .item .title h2, #portfolio #content .item .description p{
+    margin: 0px;
+    padding: 5px;
+}
+
+#portfolio #content .item .description p{
+    text-align:justify;
+}
+
+#portfolio #content .item .description{
+    flex-grow: 1;
+}
+
+#portfolio #content .item .image{
+    height:200px;
+    border-radius: 0.8em;
+    height: 250px;
+    overflow: hidden;
+}
+
+#portfolio #content .item .button{
+    flex: 0.4;
+    margin: auto 15px 5px auto;
+}
+
+#portfolio #content .item .button img{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+#portfolio #content .item .image img{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250,250,250);
+    object-fit: contain;
+}

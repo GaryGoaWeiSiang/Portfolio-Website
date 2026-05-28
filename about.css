@@ -1,0 +1,108 @@
+
+#introduction, #skill, #achievement, #dream{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    margin: 10px 0px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+#introduction{
+    background-color: rgb(192,193,255);
+}
+
+#skill{
+    background-color: rgb(255,219,209);
+}
+
+#achievement{
+    background-color: rgb(255, 255, 168);
+}
+
+#dream{
+    background-color: rgb(153, 255, 216);
+}
+
+#introduction .title, #skill .title, #achievement .title, #dream .title{
+    flex: 0.5;
+    width: fit-content;
+    border-radius: 0.8em;
+    margin: 5px;
+    padding: 5px;
+}
+
+#introduction .title{
+    background-color: rgb(242,239,255);
+}
+
+#skill .title{
+    background-color: rgb(255, 237, 232);
+}
+
+#achievement .title{
+    background-color: rgb(255, 255, 212);
+}
+
+#dream .title{
+    background-color: rgb(202, 255, 235);
+}
+
+#introduction .content, #skill .content, #achievement .content{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#introduction .content #image{
+    width: 50%;
+    max-width: 250px;
+    height: 400px;
+    align-items: stretch;
+    border-radius: 0.8em;
+    margin: auto 5px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+#introduction .content #image img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#introduction .content #detail{
+    flex: 1;
+}
+
+#introduction .content #detail #personal, #introduction .content #detail #study, #introduction .content #detail #hobby{
+    padding:10px;
+    margin-top: 5px;
+    background-color: rgb(250,250,250);
+    border-radius: 0.8em;
+}
+
+#skill .content .item, #achievement .content .item, #dream .content{
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(250,250,250);
+    border-radius: 0.8em;
+}
+
+@media (max-width:700px){
+    #introduction .content, #skill .content, #achievement .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #introduction .content #image{
+        width: 100%;
+        margin: 5px auto;
+    }
+}
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content ="This is the Portfolio page of my personal portfolio website">
+    <meta name="author" content="Goa Wei Siang">
+    <link rel="stylesheet" type="text/css" href="website.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <script src="website.js" defer></script>
+    <title>Portfolio - My Portfolio Website </title>
+</head>
+<body>
+    <header class="topbar">
+    <div class="header">
+        <div id="title"><h1 id="title"><b>Personal Portfolio Website</b></h1></div>
+    </div>
+    <div class="subtitle">
+        <div id="subtitle">
+            <p id="subtitle"><b>Portfolio:</b> My past portfolio and achievements.</p>
+        </div>
+    </div>
+    <hr class="navDivider1">
+    <nav class="navigation">
+        <a class="navButton" href="home.html" title="Go to Home page">Home</a>
+        <a class="navButton" href="about.html" title="Go to About Me page">About Me</a>
+        <a class="navButton active" href="portfolio.html" onclick="scrollToTop()" title="Go to top of Portfolio page">Portfolio</a>
+    </nav>
+    <hr class="navDivider2">
+    </header>
+    <main class="main">
+        <div class="title"><h1>My past portfolio/project</h1></div>
+        <section class="projectGrid">
+            <article class="project">
+                <div class="title">Study Buddy</div>
+                <div class="image"><img src="./img/study-buddy.webp" alt="Study Buddy" title="Study Buddy"></div>
+                <div class="content"><p>Study Buddy is a web application developed through vibe coding. This project is developed during a workshop called "VibeCoding with AI" organised by CGMA. In this workshop, I have been exposed to many AI assisted application that are useful in developing applications such as 
+                                        Google Stitch for UI/UX generation, Antigravity, a AI-powered IDE, Supabase for backend management and Netlify for deployment.
+                                        <br>
+                                        <br>
+                                        &nbsp&nbspIn this application, user can produce flashcards that helpful for quick revisions of topic. The flashcards can be produced either by uploading the notes or typing the topic covered. Other than tha, user can also challenge themselves with auto-generated quiz. 
+                                    </p></div>
+                <div class="direct">
+                    Link to GitHub: 
+                    <a title="Github" href="https://github.com/GaryGoaWeiSiang/Study_Buddy"><img src="./img/github.png" alt="Github Icon" title="Go to Study Buddy GitHub Repository"></a>
+                </div>
+            </article>
+            <article class="project">
+                <div class="title">AR & 3D model Projection</div>
+                <div class="image"><img src="./img/ARwebsite.webp" alt="AR Website" title="AR Website"></div>
+                <div class="content"><p>This AR website is created during a workshop that exposed us to Augmented Reaity (AR) and 3D model projection using AR. In this workshop, we were expsoed with few 3D model creation and rigging application. Then, we were
+                                        exposed with how to produced a website that can project 3D model using AR specifically AR.js.
+                                        <br>
+                                        <br>
+                                        &nbsp&nbspWe were exposed on how to create a custom marker for the marker for AR projection. We were also exposed on how to set up the 3D model to be projected such as the size, the orientation, the color, or even using imported model. 
+                                        Lastly, we were also exposed on how to create interaction between the projected 3D model such as changing color when two model were brought closely to each other.
+                                    </p>
+                                    </div>
+                <div class="direct">
+                    Link to GitHub: 
+                    <a title="Github" href="https://github.com/GaryGoaWeiSiang/Gary-Trying-AR-Online-yay"><img src="./img/github.png" alt="Github Icon" title="Go to AR website GitHub Repository"></a>
+                </div>
+                </div>
+            </article>
+            <article class="project">
+                <div class="title">Kingdom Blitz</div>
+                <div class="image"><img src="./img/KingdomBlitz.webp" alt="Kingdom Blitz" title="Kingdom Blitz"></div>
+                <div class="content"><p>Kingdom Blitz is a game project for my degree course "Programming Technique II". In this project, we are required to use object-oriented programming, which involve classes and also window BGI library for the graphical drawing of the game.
+                            <br>
+                            <br>
+                            &nbsp&nbspIn this game, the player is a knight with a gun, where user can aim and shoot using thier mouse position. The enemies will continuously spawn and get close to player to damage the player.
+                            The game have few different type of enemies that spawn at certain time interval. At the 10:00 minute time interval, a boss will spawn, where defeating the boss will causes the player to clear the game. 
+                                
+                    </p>
+                </div>
+                <div class="direct">
+                    Link to GitHub: 
+                    <a title="Github" href="https://github.com/GaryGoaWeiSiang/KingdomBlitz"><img src="./img/github.png" alt="Github Icon" title="Go to Kingdom Blitz GitHub Repository"></a>
+                </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+            <div><p>Connect with me:</p></div>
+            <div><a title="Github" href="https://github.com/GaryGoaWeiSiang"><img src="./img/github.png" alt="Github Icon"></a></div>
+            <div><a title="LinkedIn" href="https://www.linkedin.com/in/wei-siang-goa-79269a348/"><img src="./img/linkedin.webp" alt="LinkedIn Icon"></a></div>
+            <div><a title="Email" href="mailto:goaweisiang@graduate.utm.my"><img src="./img/email.png" alt="Email Icon"></a></div>
+    </footer>
+</body>
+</html>

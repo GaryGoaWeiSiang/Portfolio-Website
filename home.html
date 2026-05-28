@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content ="This is the homepage of my personal portfolio website">
+    <meta name="author" content="Goa Wei Siang">
+    <link rel="stylesheet" type="text/css" href="website.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="website.js" defer></script>
+    <title>Home - My Portfolio Website </title>
+</head>
+<body>
+    <header class="topbar">
+    <div class="header">
+        <h1 id="title"><b>Personal Portfolio Website</b></h1>
+    </div>
+    <div class="subtitle">
+        <p id="subtitle">Welcome to Gary's portfolio website!</p>
+    </div>
+    <hr class="navDivider1">
+    <nav class="navigation">
+        <a class="navButton active" href="home.html" onclick="scrollToTop()" title="Go to top of Home page">Home</a>
+        <a class="navButton" href="about.html" title="Go to About Me page">About Me</a>
+        <a class="navButton" href="portfolio.html" title="Go to Portfolio page">Portfolio</a>
+    </nav>
+    <hr class="navDivider2">
+    </header>
+    <main class="main">
+        <section id="introduction">
+            <div id="title"><h1>A Simple Introduction</h1></div>
+            <div id="content">
+                <div id="image"><img src="./img/Personal.webp" alt="Picture of Goa Wei Siang" title="Picture of Goa Wei Siang" fetchpriority="high"></div>
+                <div id="details">
+                    <div id="personal">
+                        <h2>Hi! My Name is Goa Wei Siang (aka Gary). 👋</h2>
+                        <p>I am currently a university student at Universiti Teknologi Malaysia (UTM).</p>
+                        <p>I am currently undertaking the Bachelor of Computer Science (Graphic and Multimedia Software).</p>
+                    </div>
+                    <div id="achievement">
+                        <h2>My current academic acheivements 	📚</h2>
+                        <ul>
+                            <li>Current degree CGPA: 3.98</li>
+                            <li>STPM: CGPA 4.00</li>
+                            <li>SPM: 5A+ 4A</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="directButton">
+                <a title="Go to About Me" href="about.html">More about me...</a>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div id="title">
+                <h1>My latest portfolio</h1>
+            </div>
+            <div id="content">
+                <div class="item">
+                    <div class="title"><h2>Study Buddy</h2></div>
+                    <div class="description"><p>Study buddy is a we application that allows users to create flashcard decks for quick studying session using notes uploaded and also allow users to challenge themselves with auto-generated quiz.</p></div>
+                    <div class="image"><img src="./img/study-buddy.webp" alt="Picture of study-buddy" title="Study Buddy"> </div>
+                    <a class="button" title="Go to portfolio" href="portfolio.html"><img src="./img/arrow.png" alt="Direct to portfolio"></a>    
+                </div>
+                <div class="item">
+                    <div class="title"><h2>AR & 3D model projection</h2></div>
+                    <div class="description"><p>A website to explore the workings of AR, which include customizing the marker, projecting 3D model and include interactions between projected models.</p></div>
+                    <div class="image"><img src="./img/ARwebsite.webp" alt="Picture of AR website" title="AR website"> </div>
+                    <a class="button" title="Go to portfolio" href="portfolio.html"><img src="./img/arrow.png" alt="Direct to portfolio"></a>
+                </div>
+                <div class="item">
+                    <div class="title"><h2>Kingdom Blitz</h2></div>
+                    <div class="description"><p>A 2D action RPG game created using C++ and basic windows BGI graphic library to showcase understanding of object-oriented programming in C++ .</p></div>
+                    <div class="image"><img src="./img/KingdomBlitz.webp" alt="Picture of Kingdom Blitz" title="Kingdom Blitz"> </div>
+                    <a class="button" title="Go to portfolio" href="portfolio.html"><img src="./img/arrow.png" alt="Direct to portfolio"></a>
+                </div>
+            </div>            
+        </section>
+    </main>
+    <footer class="footer">
+            <div><p>Connect with me:</p></div>
+            <div><a title="Github" href="https://github.com/GaryGoaWeiSiang"><img src="./img/github.png" alt="Github Icon"></a></div>
+            <div><a title="LinkedIn" href="https://www.linkedin.com/in/wei-siang-goa-79269a348/"><img src="./img/linkedin.webp" alt="LinkedIn Icon"></a></div>
+            <div><a title="Email" href="mailto:goaweisiang@graduate.utm.my"><img src="./img/email.png" alt="Email Icon"></a></div>
+    </footer>
+</body>
+</html>
+
