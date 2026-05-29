@@ -167,6 +167,12 @@
 #portfolio #content .item .button{
     flex: 0.4;
     margin: auto 15px 5px auto;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#portfolio #content .item .button:hover{
+    background-color: rgba(200, 198, 197,0.5);
 }
 
 #portfolio #content .item .button img{
