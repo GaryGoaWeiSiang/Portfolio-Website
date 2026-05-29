@@ -9,9 +9,14 @@ const subtitle = document.querySelector(".subtitle");
 const navDivider1 = document.querySelector(".navDivider1");
 const navDivider2 = document.querySelector(".navDivider2");
 const footerButton = document.querySelector(".footer img");
+const navButton = document.querySelector(".navigation .navButton");
 
 footerButton.addEventListener("click", () => {
     footerButton.classList.toggle("active");
+});
+
+navButton.addEventListener("click", () => {
+    navButton.classList.toggle("active");
 });
 
 window.addEventListener("scroll", function(){
