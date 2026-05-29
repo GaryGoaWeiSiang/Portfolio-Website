@@ -8,6 +8,11 @@ const navigation = document.querySelector(".navigation");
 const subtitle = document.querySelector(".subtitle");
 const navDivider1 = document.querySelector(".navDivider1");
 const navDivider2 = document.querySelector(".navDivider2");
+const footerButton = document.querySelector(".footer img");
+
+footerButton.addEventListener("click", () => {
+    footerButton.classList.toggle("active");
+});
 
 window.addEventListener("scroll", function(){
 

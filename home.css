@@ -79,6 +79,7 @@
 #introduction #directButton{
     flex: 1;
     margin: 5px 5px 5px auto;
+    border-radius: 5px;
 }
 
 #introduction #directButton a{
