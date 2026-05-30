@@ -10,6 +10,7 @@ const navDivider1 = document.querySelector(".navDivider1");
 const navDivider2 = document.querySelector(".navDivider2");
 const footerButton = document.querySelector(".footer img");
 const navButton = document.querySelector(".navigation .navButton");
+const directButton = document.querySelector(".project .direct img");
 
 footerButton.addEventListener("click", () => {
     footerButton.classList.toggle("active");
@@ -17,6 +18,10 @@ footerButton.addEventListener("click", () => {
 
 navButton.addEventListener("click", () => {
     navButton.classList.toggle("active");
+});
+
+directButton.addEventListener("click", () => {
+    directButton.classList.toggle("active");
 });
 
 window.addEventListener("scroll", function(){
